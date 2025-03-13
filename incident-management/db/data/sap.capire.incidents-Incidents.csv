@@ -5,3 +5,4 @@ ID,customer_ID,title,urgency_code,status_code
 3583f982-d7df-4aad-ab26-301d4a157cd7,1004100,Solar panel broken,H,I
 3666f982-d7df-4aad-ab26-301d4a157cd7,1006660,Lado panel broken,H,I
 B_3666f982-d7df-4aad-ab26-301d4a157cd7,1006660,FLX panel broken,H,I
+C_3666f982-d7df-4aad-ab26-301d4a157cd7,1006660,UPCH panel broken,H,I
