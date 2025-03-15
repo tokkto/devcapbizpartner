@@ -169,10 +169,6 @@ annotate service.Urgency with {
 };
 
 annotate service.Status with {
-    descr @Common.Text : code
-};
-
-annotate service.Status with {
     name @Common.Text : code
 };
 
