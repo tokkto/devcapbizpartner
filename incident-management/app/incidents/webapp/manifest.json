@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.16.5",
-      "toolsId": "adb0f75f-b848-47cb-b181-1ad91c7b79f3"
+      "toolsId": "1ecba3d4-3f1c-41d5-9f44-24035f5bdd6f"
     },
     "dataSources": {
       "mainService": {
@@ -130,7 +130,7 @@
               "editableHeaderContent": false,
               "contextPath": "/Incidents",
               "controlConfiguration": {
-                "conversation/@com.sap.vocabularies.UI.v1.LineItem#i18nConversation": {
+                "conversation/@com.sap.vocabularies.UI.v1.LineItem#Conversation": {
                   "tableSettings": {
                     "type": "ResponsiveTable",
                     "creationMode": {
