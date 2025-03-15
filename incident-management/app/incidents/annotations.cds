@@ -89,12 +89,12 @@ annotate service.Incidents with @(
             {
                 $Type : 'UI.DataField',
                 Value : status_code,
-                Label : 'Status',
+                Label : '{i18n>Status}',
             },
             {
                 $Type : 'UI.DataField',
                 Value : urgency_code,
-                Label : '{i18n>Urgency}',
+                Label : 'Urgency',
             },
         ],
     },
@@ -175,7 +175,6 @@ annotate service.Status with {
 annotate service.Incidents with {
     status @(
         Common.Text : status.descr,
-        UI.MultiLineText : false,
         Common.ValueListWithFixedValues : true,
     )
 };
@@ -183,7 +182,6 @@ annotate service.Incidents with {
 annotate service.Incidents with {
     urgency @(
         Common.Text : urgency.descr,
-        UI.MultiLineText : false,
         Common.ValueListWithFixedValues : true,
     )
 };
