@@ -1,7 +1,6 @@
 
 # devcapbizpartner
-Christian
-EG
+Miguel M
 
 
 
