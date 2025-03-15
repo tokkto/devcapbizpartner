@@ -93,6 +93,7 @@ annotate service.Incidents with @(
             {
                 $Type : 'UI.DataField',
                 Value : urgency_code,
+                Label : '{i18n>Urgency}',
             },
         ],
     },
