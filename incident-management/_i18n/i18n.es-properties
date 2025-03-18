@@ -1,0 +1,30 @@
+
+#XFLD,120: Label for a filter field
+Urgency=Urgente
+
+#XFLD,120: Label for a filter field
+Status=Estado
+
+#XFLD,120: Label for a column title
+Customer=Cliente
+
+#XFLD,50: Label for a section
+Overview=Resumen
+
+#XFLD,50: Label for a section
+Details=Detalle
+
+#XFLD,50: Label for a section
+GeneralInformation=Informacion General
+
+#XFLD,50: Label for a section
+Conversation=Conversacion
+
+#XFLD,120: Label for a column title
+Author=Autor
+
+#XFLD,120: Label for a column title
+Message=Comentario
+
+#XFLD,120: Label for a column title
+Date=Fecha
