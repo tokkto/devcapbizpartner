@@ -1,6 +1,6 @@
-   /**
-    * Implementation for CatalogService defined in ./cat-service.cds
-    */
+ /**
+    Implementation for CatalogService defined in ./cat-service.cds
+    **/
     const cds = require('@sap/cds')
     module.exports = function (){
       // Register your event handlers in here, e.g....
