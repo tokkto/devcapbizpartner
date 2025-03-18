@@ -8,7 +8,6 @@ annotate service.Incidents with @(
             {
                 $Type : 'UI.DataField',
                 Value : title,
-                Label : '{i18n>Title}',
             },
             {
                 $Type : 'UI.DataField',
@@ -68,8 +67,8 @@ annotate service.Incidents with @(
         },
     ],
     UI.SelectionFields : [
-        status_code,
-        urgency_code,
+        status.code,
+        urgency.code,
     ],
     UI.HeaderInfo : {
         Title : {
@@ -82,7 +81,7 @@ annotate service.Incidents with @(
             $Type : 'UI.DataField',
             Value : customer.name,
         },
-        TypeImageUrl : 'sap-icon://calendar',
+        TypeImageUrl : 'sap-icon://alert',
     },
     UI.FieldGroup #i18nDetails : {
         $Type : 'UI.FieldGroupType',
@@ -95,6 +94,7 @@ annotate service.Incidents with @(
             {
                 $Type : 'UI.DataField',
                 Value : urgency_code,
+                Label : 'Urgency',
             },
         ],
     },
@@ -129,23 +129,29 @@ annotate service.Incidents with {
     )
 };
 
-annotate service.Incidents with {
-    status @(
-        Common.Label : '{i18n>Status}',
+annotate service.Status with {
+    code @(
+        Common.Label : 'Status',
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Status',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : code,
+                    ValueListProperty : 'code',
+                },
+            ],
+            Label : 'Status',
+        },
         Common.ValueListWithFixedValues : true,
-    )
-};
-
-annotate service.Incidents with {
-    urgency @(
-        Common.Label : '{i18n>Urgency}',
-        Common.ValueListWithFixedValues : true,
+        Common.Text : descr,
     )
 };
 
 annotate service.Urgency with {
     code @(
-        Common.Text : descr,
+        Common.Label : '{i18n>Urgency}',
         Common.ValueList : {
             $Type : 'Common.ValueListType',
             CollectionPath : 'Urgency',
@@ -158,23 +164,24 @@ annotate service.Urgency with {
             ],
         },
         Common.ValueListWithFixedValues : true,
+        Common.Text : descr,
     )
 };
 
 annotate service.Status with {
-    code @(
-        Common.Text : descr,
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'Status',
-            Parameters : [
-                {
-                    $Type : 'Common.ValueListParameterInOut',
-                    LocalDataProperty : code,
-                    ValueListProperty : 'code',
-                },
-            ],
-        },
+    name @Common.Text : code
+};
+
+annotate service.Incidents with {
+    status @(
+        Common.Text : status.descr,
+        Common.ValueListWithFixedValues : true,
+    )
+};
+
+annotate service.Incidents with {
+    urgency @(
+        Common.Text : urgency.descr,
         Common.ValueListWithFixedValues : true,
     )
 };

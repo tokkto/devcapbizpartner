@@ -1,7 +1,7 @@
 const cds = require('@sap/cds')
 
 class ProcessorService extends cds.ApplicationService {
-  /** Registering custom event handlers */
+  /** RegisterProcessorServiceing custom event handlers */
   init() {
     this.before("UPDATE", "Incidents", (req) => this.onUpdate(req));
     this.before("CREATE", "Incidents", (req) => this.changeUrgencyDueToSubject(req.data));
