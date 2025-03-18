@@ -33,7 +33,7 @@
             },
             "bob": {
               "password": "initial",
-              "roles": ["admin"]
+              "roles": ["admin","support"]
             }
           }
         }
