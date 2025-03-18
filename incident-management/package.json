@@ -25,14 +25,15 @@
           "kind": "mocked",
           "users": {
             "incident.support@tester.sap.com": {
-              "password": "initial",
+              "password": "initial3",
               "roles": ["support"]
             },
             "alice": {
               "roles": ["support"]
             },
             "bob": {
-              "roles": ["support"]
+              "password": "initial",
+              "roles": ["admin"]
             }
           }
         }
@@ -42,4 +43,6 @@
   "sapux": [
     "app/incidents"
   ]
+}
+
 }
