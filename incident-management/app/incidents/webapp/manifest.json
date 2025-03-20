@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.16.5",
-      "toolsId": "aa085c3f-d6aa-489f-b871-e1ac6fc36a28"
+      "toolsId": "801a396f-5203-4aab-9741-7e60c3c980c4"
     },
     "dataSources": {
       "mainService": {
@@ -116,7 +116,8 @@
                     "type": "ResponsiveTable"
                   }
                 }
-              }
+              },
+              "initialLoad": "Enabled"
             }
           }
         },
@@ -127,7 +128,17 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Incidents"
+              "contextPath": "/Incidents",
+              "controlConfiguration": {
+                "conversation/@com.sap.vocabularies.UI.v1.LineItem#Conversation": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable",
+                    "creationMode": {
+                      "name": "Inline"
+                    }
+                  }
+                }
+              }
             }
           }
         }
