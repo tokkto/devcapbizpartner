@@ -1,7 +1,7 @@
 using { bookshop as my } from '../db/schema.cds';
 
-@path : '/service/bookshopService'
-service bookshopService
+@path : '/service/BookshopService'
+service BookshopService
 {
     @odata.draft.enabled
     entity Books as
@@ -17,7 +17,7 @@ service bookshopService
     );
 }
 
-annotate bookshopService with @requires :
+annotate BookshopService with @requires :
 [
     'authenticated-user'
 ];

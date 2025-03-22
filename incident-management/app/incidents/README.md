@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Thu Mar 13 2025 01:49:23 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Thu Mar 13 2025 01:54:14 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.16.5|
 |**Generation Platform**<br>SAP Business Application Studio|
@@ -9,7 +9,7 @@
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/odata/v4/processor/|
 |**Module Name**<br>incidents|
-|**Application Title**<br>Incident-Management|
+|**Application Title**<br>incident-Management|
 |**Namespace**<br>ns|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.133.0|
@@ -21,7 +21,7 @@
 
 ## incidents
 
-First SAP Fiori application.
+An SAP Fiori application.
 
 ### Starting the generated app
 

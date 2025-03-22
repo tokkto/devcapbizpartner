@@ -38,9 +38,9 @@ annotate service.Incidents with @(
         },
         {
             $Type : 'UI.ReferenceFacet',
-            Label : '{i18n>Conversation}',
-            ID : 'i18nConversation',
-            Target : 'conversation/@UI.LineItem#i18nConversation',
+            Label : 'Conversation',
+            ID : 'Conversation',
+            Target : 'conversation/@UI.LineItem#Conversation',
         },
     ],
     UI.LineItem : [
@@ -67,8 +67,8 @@ annotate service.Incidents with @(
         },
     ],
     UI.SelectionFields : [
-        status_code,
-        urgency_code,
+        status.code,
+        urgency.code,
     ],
     UI.HeaderInfo : {
         Title : {
@@ -88,13 +88,13 @@ annotate service.Incidents with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Value : urgency.code,
-                Label : '{i18n>Urgency}',
+                Value : status_code,
+                Label : '{i18n>Status}',
             },
             {
                 $Type : 'UI.DataField',
-                Value : status.code,
-                Label : '{i18n>Status}',
+                Value : urgency_code,
+                Label : 'Urgency',
             },
         ],
     },
@@ -125,27 +125,13 @@ annotate service.Incidents with {
             $value : customer.name,
             ![@UI.TextArrangement] : #TextOnly
         },
-        Common.ValueListWithFixedValues : false,
-    )
-};
-
-annotate service.Incidents with {
-    status @(
-        Common.Label : '{i18n>Status}',
-        Common.ValueListWithFixedValues : true,
-    )
-};
-
-annotate service.Incidents with {
-    urgency @(
-        Common.Label : '{i18n>Urgency}',
         Common.ValueListWithFixedValues : true,
     )
 };
 
 annotate service.Status with {
     code @(
-        Common.Text : descr,
+        Common.Label : 'Status',
         Common.ValueList : {
             $Type : 'Common.ValueListType',
             CollectionPath : 'Status',
@@ -156,14 +142,16 @@ annotate service.Status with {
                     ValueListProperty : 'code',
                 },
             ],
+            Label : 'Status',
         },
         Common.ValueListWithFixedValues : true,
+        Common.Text : descr,
     )
 };
 
 annotate service.Urgency with {
     code @(
-        Common.Text : descr,
+        Common.Label : '{i18n>Urgency}',
         Common.ValueList : {
             $Type : 'Common.ValueListType',
             CollectionPath : 'Urgency',
@@ -176,11 +164,30 @@ annotate service.Urgency with {
             ],
         },
         Common.ValueListWithFixedValues : true,
+        Common.Text : descr,
+    )
+};
+
+annotate service.Status with {
+    name @Common.Text : code
+};
+
+annotate service.Incidents with {
+    status @(
+        Common.Text : status.descr,
+        Common.ValueListWithFixedValues : true,
+    )
+};
+
+annotate service.Incidents with {
+    urgency @(
+        Common.Text : urgency.descr,
+        Common.ValueListWithFixedValues : true,
     )
 };
 
 annotate service.Incidents.conversation with @(
-    UI.LineItem #i18nConversation : [
+    UI.LineItem #Conversation : [
         {
             $Type : 'UI.DataField',
             Value : author,
