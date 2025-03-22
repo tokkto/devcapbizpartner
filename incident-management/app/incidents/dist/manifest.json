@@ -30,8 +30,6 @@
         "incidents-display": {
           "semanticObject": "incidents",
           "action": "display",
-          "title": "{{flpTitle}}",
-          "subTitle": "{{flpSubtitle}}",          
           "signature": {
             "parameters": {},
             "additionalParameters": "allowed"
@@ -165,6 +163,6 @@
   },
   "sap.cloud": {
     "public": true,
-    "service": "incidentmanagement.service"
+    "service": "incidents"
   }
 }
