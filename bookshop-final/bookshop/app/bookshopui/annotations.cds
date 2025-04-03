@@ -56,79 +56,40 @@ annotate service.Books with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'ID',
-            Value : ID,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'title',
-            Value : title,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'descr',
-            Value : descr,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'author_ID',
             Value : author_ID,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'genre_ID',
+            Value : descr,
+        },
+        {
+            $Type : 'UI.DataField',
             Value : genre_ID,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : ID,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : title,
         },
     ],
     UI.SelectionFields : [
-        ID,
-        title,
-        descr,
         author_ID,
-        genre_ID,
     ],
 );
 
 annotate service.Books with {
     author @(
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'Authors',
-            Parameters : [
-                {
-                    $Type : 'Common.ValueListParameterInOut',
-                    LocalDataProperty : author_ID,
-                    ValueListProperty : 'ID',
-                },
-                {
-                    $Type : 'Common.ValueListParameterDisplayOnly',
-                    ValueListProperty : 'name',
-                },
-            ],
-        },
         Common.Label : '{i18n>Authorid}',
-        Common.Text : descr,
-        Common.ValueListWithFixedValues : true,
-    )
+        )
 };
 
 annotate service.Books with {
     descr @(
         Common.Label : '{i18n>Description}',
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'Books',
-            Parameters : [
-                {
-                    $Type : 'Common.ValueListParameterInOut',
-                    LocalDataProperty : descr,
-                    ValueListProperty : 'title',
-                },
-            ],
-            Label : 'Description',
-        },
-        Common.ValueListWithFixedValues : true,
-    )
+        )
 };
 
 annotate service.Authors with {
@@ -136,46 +97,21 @@ annotate service.Authors with {
 };
 
 annotate service.Authors with {
-    ID @Common.Label : 'author/ID'
+    ID @(
+        Common.Label : 'author/ID',
+        )
 };
 
 annotate service.Books with {
     title @(
         Common.Label : '{i18n>Title}',
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'Books',
-            Parameters : [
-                {
-                    $Type : 'Common.ValueListParameterInOut',
-                    LocalDataProperty : title,
-                    ValueListProperty : 'title',
-                },
-            ],
-            Label : 'Title',
-        },
-        Common.ValueListWithFixedValues : true,
-        Common.Text : descr,
-    )
+        )
 };
 
 annotate service.Books with {
     ID @(
         Common.Label : '{i18n>Id}',
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'Books',
-            Parameters : [
-                {
-                    $Type : 'Common.ValueListParameterInOut',
-                    LocalDataProperty : ID,
-                    ValueListProperty : 'author_ID',
-                },
-            ],
-            Label : 'ID',
-        },
-        Common.ValueListWithFixedValues : true,
-    )
+        )
 };
 
 annotate service.Books with {
