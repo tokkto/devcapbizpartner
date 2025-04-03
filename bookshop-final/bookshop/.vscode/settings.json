@@ -7,6 +7,5 @@
     // "csv (semicolon)",
     // "tab",
     // "tsv"
-  ],
-  "SAP HANA Database Explorer.UseObjectsDefinitionForSqlGeneration.RetentionTime": 7
+  ]
 }
