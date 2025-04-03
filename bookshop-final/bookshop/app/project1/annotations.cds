@@ -14,37 +14,32 @@ annotate service.Books with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'title',
+                Label : '{i18n>Titulo}',
                 Value : title,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'descr',
-                Value : descr,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'author_ID',
+                Label : '{i18n>Autor}',
                 Value : author_ID,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'genre_ID',
+                Label : '{i18n>Genero}',
                 Value : genre_ID,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'stock',
+                Label : '{i18n>Stock}',
                 Value : stock,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'price',
+                Label : '{i18n>Precio}',
                 Value : price,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'currency_code',
+                Label : '{i18n>Moneda}',
                 Value : currency_code,
             },
         ],
@@ -127,13 +122,12 @@ annotate service.Books with {
 annotate service.Books with {
     price @(
         Common.Label : 'Autor',
-        Common.Text : author.name,
         )
 };
 
 annotate service.Books with {
     currency @(Common.Label : 'Titulo',
-        Common.Text : descr,
+        Common.Text : currency.name,
         Common.ValueList : {
             $Type : 'Common.ValueListType',
             CollectionPath : 'Books',
