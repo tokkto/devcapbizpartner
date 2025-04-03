@@ -61,29 +61,28 @@ annotate service.Books with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : 'title',
+            Label : '{i18n>Titulo}',
             Value : title,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'descr',
+            Label : '{i18n>Descripcin}',
             Value : descr,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'author_ID',
+            Label : '{i18n>Autor}',
             Value : author_ID,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'genre_ID',
+            Label : '{i18n>Gnero}',
             Value : genre_ID,
         },
     ],
     UI.SelectionFields : [
         ID,
         price,
-        currency.code,
     ],
 );
 
@@ -110,6 +109,6 @@ annotate service.Books with {
 };
 
 annotate service.Books with {
-    price @Common.Label : '{i18n>Price}'
+    price @Common.Label : '{i18n>Precio}'
 };
 
