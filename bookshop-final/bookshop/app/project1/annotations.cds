@@ -80,7 +80,6 @@ annotate service.Books with @(
     ],
     UI.SelectionFields : [
         ID,
-        texts.title,
         author.name,
     ],
 );
