@@ -1,1 +1,4 @@
-code,locale,name,descr
+code;locale;descr
+H;es;Alto
+L;es;Bajo
+M;es,Medio

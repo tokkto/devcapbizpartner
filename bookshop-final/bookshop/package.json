@@ -1,5 +1,5 @@
 {
-  "name": "incident-management",
+  "name": "bookshop",
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "repository": "<Add your repository here>",
@@ -15,9 +15,9 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-incidents": "cds watch --open incidents/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-books": "cds watch --open books/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
-    "app/incidents"
+    "app/books"
   ]
 }
