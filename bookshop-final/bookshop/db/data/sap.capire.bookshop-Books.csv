@@ -1,0 +1,11 @@
+ID,title,descr,author_ID,stock,price,createdAt,createdBy,modifiedAt,modifiedBy
+29674348,title-29674348,descr-29674348,14165,86,20293494.15,2006-09-07T00:00:00.000Z,createdBy.ho0vg@example.org,2022-06-12T00:00:00.000Z,modifiedBy.ho0vg@example.com
+29674349,title-29674349,descr-29674349,14161,36,6050628.32,2018-02-17T00:00:00.000Z,createdBy.ho0vh@example.org,2001-10-18T00:00:00.000Z,modifiedBy.ho0vh@example.org
+29674350,title-29674350,descr-29674350,14164,71,15092652.24,2001-05-22T00:00:00.000Z,createdBy.ho0vi@example.org,2020-06-05T00:00:00.000Z,modifiedBy.ho0vi@example.net
+29674351,title-29674351,descr-29674351,14170,0,1174326.13,2020-08-23T00:00:00.000Z,createdBy.ho0vj@example.org,2010-03-26T00:00:00.000Z,modifiedBy.ho0vj@example.com
+29674352,title-29674352,descr-29674352,14164,30,5188133.17,2008-07-09T00:00:00.000Z,createdBy.ho0vk@example.net,2017-07-25T00:00:00.000Z,modifiedBy.ho0vk@example.com
+29674353,title-29674353,descr-29674353,14170,55,8138667.27,2014-04-29T00:00:00.000Z,createdBy.ho0vl@example.net,2020-12-18T00:00:00.000Z,modifiedBy.ho0vl@example.net
+29674354,title-29674354,descr-29674354,14165,48,2177399.24,2013-06-14T00:00:00.000Z,createdBy.ho0vm@example.net,2019-09-14T00:00:00.000Z,modifiedBy.ho0vm@example.com
+29674355,title-29674355,descr-29674355,14167,37,5322339.46,2004-10-19T00:00:00.000Z,createdBy.ho0vn@example.org,2019-02-15T00:00:00.000Z,modifiedBy.ho0vn@example.com
+29674356,title-29674356,descr-29674356,14163,79,10621288.22,2003-06-06T00:00:00.000Z,createdBy.ho0vo@example.net,2009-12-21T00:00:00.000Z,modifiedBy.ho0vo@example.org
+29674357,title-29674357,descr-29674357,14167,88,30577273.17,2007-07-14T00:00:00.000Z,createdBy.ho0vp@example.net,2012-01-01T00:00:00.000Z,modifiedBy.ho0vp@example.net
